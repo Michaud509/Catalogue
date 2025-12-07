@@ -208,3 +208,89 @@ footer .social a {
 footer .social a:hover {
     text-decoration: underline;
 }
+
+
+/* 🔧 MOBILE FIX — Pou anpeche bouton yo pile youn sou lòt */
+@media (max-width: 768px) {
+
+    header {
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    header nav a {
+        margin: 0;
+        width: 80%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .catalogo {
+        padding: 60px 20px;
+    }
+}
+
+
+/* 🔘 Bouton 3 TI PWEN (MENU MOBILE) */
+.menu-btn {
+    display: none;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* Desktop menu */
+.menu-desktop a {
+    margin-left: 20px;
+}
+
+/* Menu mobil */
+.menu-mobile {
+    display: none;
+    flex-direction: column;
+    background: #9b620d;
+    width: 100%;
+    padding: 15px 0;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    z-index: 101;
+}
+
+.menu-mobile a {
+    padding: 12px 0;
+    text-align: center;
+    border-bottom: 1px solid #ffffff55;
+    color: #fff;
+}
+
+/* RESPONSIVE: montre bouton 3 ti pwen sou mobil */
+@media (max-width: 768px) {
+
+    .menu-desktop {
+        display: none;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+}
